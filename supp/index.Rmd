@@ -1,0 +1,35 @@
+--- 
+title: "something something Perdiz"
+author: "Robert Z. Selden, Jr., John E. Dockall, and Bonnie L. Etter"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+bibliography: [book.bib]
+biblio-style: apalike
+link-citations: yes
+description: "Morphological analysis of Perdiz arrow points."
+---
+
+# Preface {-}
+
+>Reproducibility---the ability to recompute results---and replicability---the chances other experimenters will achieve a consistent result---are two foundational characteristics of successful scientific research [@RN20918].
+
+This volume is written in **Markdown**, and includes all analysis code employed in the study, providing a means for others to reproduce (exactly) those results discussed and expounded upon in the following chapters. The replicable nature of this undertaking provides a means for others to critically assess and evaluate the various analytical components of this study [@RN20915;@RN20916;@RN20917], which is a necessary requirement for the production of reliable knowledge. Typology is the topic of this particular undertaking, and typological assignments provide the requisite foundation for many of the assumptions, inferences, and interpretations that archaeologists regularly make. Diagnostic types---whether functional, decorative, morphological, or chronological [@RN20847]---are of considerable import in formulating archaeological interpretations.
+
+## Primary findings
+
+* Perdiz arrow point shape differs by Caddo community of practice
+* Perdiz arrow point shape in the northern Caddo community of practice differ significantly through time
+* Perdiz arrow point shape in the southern Caddo community of practice do not differ significantly through time
+
+## Acknowledgments
+
+We express our gratitude to the Caddo Nation of Oklahoma and the Anthropology and Archaeology Laboratory at Stephen F. Austin State University for the requisite permissions and access to the NAGPRA items from the Washington Square Mound site and Turner collection. Thanks to ..., as well as the editors and reviewers for their comments and constructive criticisms that further improved the manuscript.
+
+## Funding
+
+Components of the analytical workflow were developed and funded by a Preservation Technology and Training grant (P14AP00138) to RZS from the National Center for Preservation Technology and Training, as well as grants to RZS from the Caddo Nation of Oklahoma, National Forests and Grasslands in Texas (15-PA-11081300-033) and the United States Forest Service (20-PA-11081300-074).
+
+## Data management
+
+The analysis code associated with this project can be accessed through this document or the [GitHub](https://github.com/aksel-blaise/perdiz2) repository, which is digitally curated on the Open Science Framework [DOI: 10.17605/OSF.IO/DEJ74](https://osf.io/dej74/).
