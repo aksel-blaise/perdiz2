@@ -213,7 +213,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb2-13"><a href="elliptical-fourier-analysis.html#cb2-13" aria-hidden="true" tabindex="-1"></a>att.data<span class="sc">$</span>region <span class="ot">&lt;-</span> <span class="fu">as.factor</span>(att.data<span class="sc">$</span>region)</span>
 <span id="cb2-14"><a href="elliptical-fourier-analysis.html#cb2-14" aria-hidden="true" tabindex="-1"></a>att.data<span class="sc">$</span>temp.reg <span class="ot">&lt;-</span> <span class="fu">as.factor</span>(att.data<span class="sc">$</span>temp.reg)</span>
 <span id="cb2-15"><a href="elliptical-fourier-analysis.html#cb2-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-16"><a href="elliptical-fourier-analysis.html#cb2-16" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>((att.data[, <span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>]), <span class="st">&quot;pipe&quot;</span>, <span class="at">caption =</span> <span class="st">&quot;Qualitative data for Perdiz arrow point sample.&quot;</span>)</span></code></pre></div>
+<span id="cb2-16"><a href="elliptical-fourier-analysis.html#cb2-16" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>((att.data[, <span class="dv">1</span><span class="sc">:</span><span class="dv">7</span>]), <span class="st">&quot;pipe&quot;</span>, <span class="at">caption =</span> <span class="st">&quot;Qualitative data for Perdiz arrow point sample.&quot;</span>)</span></code></pre></div>
 <table>
 <caption>(#tab:load.packages)Qualitative data for Perdiz arrow point sample.</caption>
 <thead>
@@ -223,6 +223,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <th align="left">context</th>
 <th align="left">raw.mat</th>
 <th align="left">temporal</th>
+<th align="left">region</th>
+<th align="left">temp.reg</th>
 </tr>
 </thead>
 <tbody>
@@ -232,6 +234,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">quartzite</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="even">
 <td align="left">490</td>
@@ -239,6 +243,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">quartzite</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="odd">
 <td align="left">553</td>
@@ -246,6 +252,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">quartzite</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="even">
 <td align="left">554</td>
@@ -253,6 +261,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">quartzite</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="odd">
 <td align="left">555</td>
@@ -260,6 +270,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">quartzite</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="even">
 <td align="left">556</td>
@@ -267,6 +279,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="odd">
 <td align="left">558</td>
@@ -274,6 +288,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">quartzite</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="even">
 <td align="left">559</td>
@@ -281,6 +297,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">quartzite</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="odd">
 <td align="left">562</td>
@@ -288,6 +306,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">quartzite</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="even">
 <td align="left">565</td>
@@ -295,6 +315,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="odd">
 <td align="left">591</td>
@@ -302,6 +324,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="even">
 <td align="left">598</td>
@@ -309,6 +333,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="odd">
 <td align="left">645</td>
@@ -316,6 +342,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="even">
 <td align="left">646</td>
@@ -323,6 +351,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="odd">
 <td align="left">647</td>
@@ -330,6 +360,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">quartzite</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="even">
 <td align="left">648</td>
@@ -337,6 +369,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="odd">
 <td align="left">649</td>
@@ -344,6 +378,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">quartzite</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="even">
 <td align="left">650</td>
@@ -351,6 +387,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="odd">
 <td align="left">651</td>
@@ -358,6 +396,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="even">
 <td align="left">652</td>
@@ -365,6 +405,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="odd">
 <td align="left">653</td>
@@ -372,6 +414,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="even">
 <td align="left">654</td>
@@ -379,6 +423,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="odd">
 <td align="left">655</td>
@@ -386,6 +432,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="even">
 <td align="left">656</td>
@@ -393,6 +441,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="odd">
 <td align="left">657</td>
@@ -400,6 +450,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="even">
 <td align="left">658</td>
@@ -407,6 +459,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="odd">
 <td align="left">659</td>
@@ -414,6 +468,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="even">
 <td align="left">660</td>
@@ -421,6 +477,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="odd">
 <td align="left">661</td>
@@ -428,6 +486,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="even">
 <td align="left">665</td>
@@ -435,6 +495,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">quartzite</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="odd">
 <td align="left">677</td>
@@ -442,6 +504,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="even">
 <td align="left">678</td>
@@ -449,6 +513,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">quartzite</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="odd">
 <td align="left">an51-fig26a</td>
@@ -456,6 +522,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">chert</td>
 <td align="left">MC</td>
+<td align="left">south</td>
+<td align="left">MCS</td>
 </tr>
 <tr class="even">
 <td align="left">an51-fig26c</td>
@@ -463,6 +531,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">chert</td>
 <td align="left">MC</td>
+<td align="left">south</td>
+<td align="left">MCS</td>
 </tr>
 <tr class="odd">
 <td align="left">an115-fig7</td>
@@ -470,6 +540,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">chert</td>
 <td align="left">MC</td>
+<td align="left">south</td>
+<td align="left">MCS</td>
 </tr>
 <tr class="even">
 <td align="left">cp220-fig11-12a</td>
@@ -477,6 +549,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="odd">
 <td align="left">cp495-fig16h</td>
@@ -484,6 +558,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="even">
 <td align="left">cp495-fig16i</td>
@@ -491,6 +567,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="odd">
 <td align="left">hc2-fig30a</td>
@@ -498,6 +576,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">chert</td>
 <td align="left">MC</td>
+<td align="left">south</td>
+<td align="left">MCS</td>
 </tr>
 <tr class="even">
 <td align="left">hc2-fig30b</td>
@@ -505,6 +585,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">quartzite</td>
 <td align="left">MC</td>
+<td align="left">south</td>
+<td align="left">MCS</td>
 </tr>
 <tr class="odd">
 <td align="left">hc2-fig30c</td>
@@ -512,6 +594,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">s.wd</td>
 <td align="left">MC</td>
+<td align="left">south</td>
+<td align="left">MCS</td>
 </tr>
 <tr class="even">
 <td align="left">hc2-fig30d</td>
@@ -519,6 +603,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">chert</td>
 <td align="left">MC</td>
+<td align="left">south</td>
+<td align="left">MCS</td>
 </tr>
 <tr class="odd">
 <td align="left">hc2-fig30f</td>
@@ -526,6 +612,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">s.wd</td>
 <td align="left">MC</td>
+<td align="left">south</td>
+<td align="left">MCS</td>
 </tr>
 <tr class="even">
 <td align="left">hc2-fig30h</td>
@@ -533,6 +621,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">quartzite</td>
 <td align="left">MC</td>
+<td align="left">south</td>
+<td align="left">MCS</td>
 </tr>
 <tr class="odd">
 <td align="left">hc2-fig30i</td>
@@ -540,6 +630,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">quartzite</td>
 <td align="left">MC</td>
+<td align="left">south</td>
+<td align="left">MCS</td>
 </tr>
 <tr class="even">
 <td align="left">hc2-fig30l</td>
@@ -547,6 +639,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">quartzite</td>
 <td align="left">MC</td>
+<td align="left">south</td>
+<td align="left">MCS</td>
 </tr>
 <tr class="odd">
 <td align="left">hc2-fig30m</td>
@@ -554,6 +648,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">s.wd</td>
 <td align="left">MC</td>
+<td align="left">south</td>
+<td align="left">MCS</td>
 </tr>
 <tr class="even">
 <td align="left">hc2-fig30n</td>
@@ -561,6 +657,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">chert</td>
 <td align="left">MC</td>
+<td align="left">south</td>
+<td align="left">MCS</td>
 </tr>
 <tr class="odd">
 <td align="left">hs15-fig7.1r</td>
@@ -568,6 +666,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="even">
 <td align="left">hs15-fig7.1t</td>
@@ -575,6 +675,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="odd">
 <td align="left">hs15-fig7.1u</td>
@@ -582,6 +684,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="even">
 <td align="left">hs15-fig7.1v</td>
@@ -589,6 +693,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="odd">
 <td align="left">hs15-fig7.1w</td>
@@ -596,6 +702,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="even">
 <td align="left">hs15-fig7.1x</td>
@@ -603,6 +711,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="odd">
 <td align="left">hs15-fig7.2b</td>
@@ -610,6 +720,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="even">
 <td align="left">hs15-fig7.2c</td>
@@ -617,6 +729,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="odd">
 <td align="left">hs15-fig7.2d</td>
@@ -624,6 +738,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="even">
 <td align="left">hs15-fig7.2e</td>
@@ -631,6 +747,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="odd">
 <td align="left">hs15-fig7.2f</td>
@@ -638,6 +756,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="even">
 <td align="left">hs15-fig7.2g</td>
@@ -645,6 +765,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="odd">
 <td align="left">hs15-fig7.2m</td>
@@ -652,6 +774,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="even">
 <td align="left">hs15-fig7.2o</td>
@@ -659,6 +783,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="odd">
 <td align="left">hs15-fig7.2q</td>
@@ -666,6 +792,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="even">
 <td align="left">hs15-fig7.2r</td>
@@ -673,6 +801,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="odd">
 <td align="left">hs15-fig7.3a</td>
@@ -680,6 +810,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="even">
 <td align="left">hs15-fig7.3aa</td>
@@ -687,6 +819,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="odd">
 <td align="left">hs15-fig7.3b</td>
@@ -694,6 +828,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="even">
 <td align="left">hs15-fig7.3bb</td>
@@ -701,6 +837,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="odd">
 <td align="left">hs15-fig7.3cc</td>
@@ -708,6 +846,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="even">
 <td align="left">hs15-fig7.3d</td>
@@ -715,6 +855,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="odd">
 <td align="left">hs15-fig7.3e</td>
@@ -722,6 +864,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="even">
 <td align="left">hs15-fig7.3f</td>
@@ -729,6 +873,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="odd">
 <td align="left">hs15-fig7.3g</td>
@@ -736,6 +882,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="even">
 <td align="left">hs15-fig7.3h</td>
@@ -743,6 +891,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="odd">
 <td align="left">hs15-fig7.3i</td>
@@ -750,6 +900,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="even">
 <td align="left">hs15-fig7.3j</td>
@@ -757,6 +909,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="odd">
 <td align="left">hs15-fig7.3k</td>
@@ -764,6 +918,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="even">
 <td align="left">hs15-fig7.3l</td>
@@ -771,6 +927,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="odd">
 <td align="left">hs15-fig7.3m</td>
@@ -778,6 +936,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="even">
 <td align="left">hs15-fig7.3n</td>
@@ -785,6 +945,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="odd">
 <td align="left">hs15-fig7.3o</td>
@@ -792,6 +954,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="even">
 <td align="left">hs15-fig7.3p</td>
@@ -799,6 +963,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="odd">
 <td align="left">hs15-fig7.3q</td>
@@ -806,6 +972,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="even">
 <td align="left">hs15-fig7.3r</td>
@@ -813,6 +981,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="odd">
 <td align="left">hs15-fig7.3s</td>
@@ -820,6 +990,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="even">
 <td align="left">hs15-fig7.3t</td>
@@ -827,6 +999,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="odd">
 <td align="left">hs15-fig7.3u</td>
@@ -834,6 +1008,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="even">
 <td align="left">hs15-fig7.3w</td>
@@ -841,6 +1017,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="odd">
 <td align="left">hs15-fig7.3x</td>
@@ -848,6 +1026,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="even">
 <td align="left">hs15-fig7.3y</td>
@@ -855,6 +1035,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="odd">
 <td align="left">hs15-fig7.3z</td>
@@ -862,6 +1044,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">chert</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="even">
 <td align="left">hs235-fig17</td>
@@ -869,6 +1053,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">quartzite</td>
 <td align="left">LC</td>
+<td align="left">north</td>
+<td align="left">LCN</td>
 </tr>
 <tr class="odd">
 <td align="left">hs269-fig12j</td>
@@ -876,6 +1062,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">chert</td>
 <td align="left">MC</td>
+<td align="left">north</td>
+<td align="left">MCN</td>
 </tr>
 <tr class="even">
 <td align="left">na206-fig12a</td>
@@ -883,6 +1071,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">s.wd</td>
 <td align="left">HC</td>
+<td align="left">south</td>
+<td align="left">HCS</td>
 </tr>
 <tr class="odd">
 <td align="left">na206-fig12b</td>
@@ -890,6 +1080,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">s.wd</td>
 <td align="left">HC</td>
+<td align="left">south</td>
+<td align="left">HCS</td>
 </tr>
 <tr class="even">
 <td align="left">na206-fig12d</td>
@@ -897,6 +1089,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">s.wd</td>
 <td align="left">HC</td>
+<td align="left">south</td>
+<td align="left">HCS</td>
 </tr>
 <tr class="odd">
 <td align="left">na206-fig12f</td>
@@ -904,6 +1098,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">chert</td>
 <td align="left">HC</td>
+<td align="left">south</td>
+<td align="left">HCS</td>
 </tr>
 <tr class="even">
 <td align="left">na206-fig12g</td>
@@ -911,6 +1107,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">chert</td>
 <td align="left">HC</td>
+<td align="left">south</td>
+<td align="left">HCS</td>
 </tr>
 <tr class="odd">
 <td align="left">na49-1</td>
@@ -918,6 +1116,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">s.wd</td>
 <td align="left">MC</td>
+<td align="left">south</td>
+<td align="left">MCS</td>
 </tr>
 <tr class="even">
 <td align="left">na49-10</td>
@@ -925,6 +1125,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">s.wd</td>
 <td align="left">MC</td>
+<td align="left">south</td>
+<td align="left">MCS</td>
 </tr>
 <tr class="odd">
 <td align="left">na49-11</td>
@@ -932,6 +1134,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">s.wd</td>
 <td align="left">MC</td>
+<td align="left">south</td>
+<td align="left">MCS</td>
 </tr>
 <tr class="even">
 <td align="left">na49-12</td>
@@ -939,6 +1143,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">s.wd</td>
 <td align="left">MC</td>
+<td align="left">south</td>
+<td align="left">MCS</td>
 </tr>
 <tr class="odd">
 <td align="left">na49-13</td>
@@ -946,6 +1152,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">s.wd</td>
 <td align="left">MC</td>
+<td align="left">south</td>
+<td align="left">MCS</td>
 </tr>
 <tr class="even">
 <td align="left">na49-137</td>
@@ -953,6 +1161,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">chert</td>
 <td align="left">MC</td>
+<td align="left">south</td>
+<td align="left">MCS</td>
 </tr>
 <tr class="odd">
 <td align="left">na49-14</td>
@@ -960,6 +1170,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">s.wd</td>
 <td align="left">MC</td>
+<td align="left">south</td>
+<td align="left">MCS</td>
 </tr>
 <tr class="even">
 <td align="left">na49-149</td>
@@ -967,6 +1179,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">chert</td>
 <td align="left">MC</td>
+<td align="left">south</td>
+<td align="left">MCS</td>
 </tr>
 <tr class="odd">
 <td align="left">na49-176</td>
@@ -974,6 +1188,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">chert</td>
 <td align="left">MC</td>
+<td align="left">south</td>
+<td align="left">MCS</td>
 </tr>
 <tr class="even">
 <td align="left">na49-187</td>
@@ -981,6 +1197,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">s.wd</td>
 <td align="left">MC</td>
+<td align="left">south</td>
+<td align="left">MCS</td>
 </tr>
 <tr class="odd">
 <td align="left">na49-195</td>
@@ -988,6 +1206,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">chert</td>
 <td align="left">MC</td>
+<td align="left">south</td>
+<td align="left">MCS</td>
 </tr>
 <tr class="even">
 <td align="left">na49-2</td>
@@ -995,6 +1215,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">s.wd</td>
 <td align="left">MC</td>
+<td align="left">south</td>
+<td align="left">MCS</td>
 </tr>
 <tr class="odd">
 <td align="left">na49-271</td>
@@ -1002,6 +1224,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">s.wd</td>
 <td align="left">MC</td>
+<td align="left">south</td>
+<td align="left">MCS</td>
 </tr>
 <tr class="even">
 <td align="left">na49-3</td>
@@ -1009,6 +1233,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">s.wd</td>
 <td align="left">MC</td>
+<td align="left">south</td>
+<td align="left">MCS</td>
 </tr>
 <tr class="odd">
 <td align="left">na49-33</td>
@@ -1016,6 +1242,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">chert</td>
 <td align="left">MC</td>
+<td align="left">south</td>
+<td align="left">MCS</td>
 </tr>
 <tr class="even">
 <td align="left">na49-4</td>
@@ -1023,6 +1251,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">s.wd</td>
 <td align="left">MC</td>
+<td align="left">south</td>
+<td align="left">MCS</td>
 </tr>
 <tr class="odd">
 <td align="left">na49-5</td>
@@ -1030,6 +1260,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">s.wd</td>
 <td align="left">MC</td>
+<td align="left">south</td>
+<td align="left">MCS</td>
 </tr>
 <tr class="even">
 <td align="left">na49-587</td>
@@ -1037,6 +1269,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">chert</td>
 <td align="left">MC</td>
+<td align="left">south</td>
+<td align="left">MCS</td>
 </tr>
 <tr class="odd">
 <td align="left">na49-616</td>
@@ -1044,6 +1278,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">s.wd</td>
 <td align="left">MC</td>
+<td align="left">south</td>
+<td align="left">MCS</td>
 </tr>
 <tr class="even">
 <td align="left">na49-7</td>
@@ -1051,6 +1287,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">s.wd</td>
 <td align="left">MC</td>
+<td align="left">south</td>
+<td align="left">MCS</td>
 </tr>
 <tr class="odd">
 <td align="left">na49-734</td>
@@ -1058,6 +1296,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">chert</td>
 <td align="left">MC</td>
+<td align="left">south</td>
+<td align="left">MCS</td>
 </tr>
 <tr class="even">
 <td align="left">na49-8</td>
@@ -1065,6 +1305,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">s.wd</td>
 <td align="left">MC</td>
+<td align="left">south</td>
+<td align="left">MCS</td>
 </tr>
 <tr class="odd">
 <td align="left">na49-9</td>
@@ -1072,6 +1314,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">mort</td>
 <td align="left">s.wd</td>
 <td align="left">MC</td>
+<td align="left">south</td>
+<td align="left">MCS</td>
 </tr>
 <tr class="even">
 <td align="left">sa135-fig15b</td>
@@ -1079,6 +1323,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">chert</td>
 <td align="left">MC</td>
+<td align="left">south</td>
+<td align="left">MCS</td>
 </tr>
 <tr class="odd">
 <td align="left">sa135-fig15c</td>
@@ -1086,6 +1332,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">chert</td>
 <td align="left">MC</td>
+<td align="left">south</td>
+<td align="left">MCS</td>
 </tr>
 <tr class="even">
 <td align="left">sa135-fig15g</td>
@@ -1093,6 +1341,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">chert</td>
 <td align="left">MC</td>
+<td align="left">south</td>
+<td align="left">MCS</td>
 </tr>
 <tr class="odd">
 <td align="left">sm193-fig1e</td>
@@ -1100,6 +1350,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">chert</td>
 <td align="left">MC</td>
+<td align="left">north</td>
+<td align="left">MCN</td>
 </tr>
 <tr class="even">
 <td align="left">sm193-fig2a</td>
@@ -1107,6 +1359,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">chert</td>
 <td align="left">MC</td>
+<td align="left">north</td>
+<td align="left">MCN</td>
 </tr>
 <tr class="odd">
 <td align="left">sm193-fig2b</td>
@@ -1114,6 +1368,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">chert</td>
 <td align="left">MC</td>
+<td align="left">north</td>
+<td align="left">MCN</td>
 </tr>
 <tr class="even">
 <td align="left">sm193-fig2e</td>
@@ -1121,6 +1377,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">chert</td>
 <td align="left">MC</td>
+<td align="left">north</td>
+<td align="left">MCN</td>
 </tr>
 <tr class="odd">
 <td align="left">sm193-fig2f</td>
@@ -1128,6 +1386,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">chert</td>
 <td align="left">MC</td>
+<td align="left">north</td>
+<td align="left">MCN</td>
 </tr>
 <tr class="even">
 <td align="left">sm193-fig2g</td>
@@ -1135,6 +1395,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">chert</td>
 <td align="left">MC</td>
+<td align="left">north</td>
+<td align="left">MCN</td>
 </tr>
 <tr class="odd">
 <td align="left">sm195-fig8</td>
@@ -1142,6 +1404,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">chert</td>
 <td align="left">MC</td>
+<td align="left">north</td>
+<td align="left">MCN</td>
 </tr>
 <tr class="even">
 <td align="left">sm442-fig19c</td>
@@ -1149,6 +1413,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">chert</td>
 <td align="left">MC</td>
+<td align="left">north</td>
+<td align="left">MCN</td>
 </tr>
 <tr class="odd">
 <td align="left">sm55-fig23</td>
@@ -1156,6 +1422,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">chert</td>
 <td align="left">MC</td>
+<td align="left">north</td>
+<td align="left">MCN</td>
 </tr>
 <tr class="even">
 <td align="left">sy280-1</td>
@@ -1163,6 +1431,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">s.wd</td>
 <td align="left">LC</td>
+<td align="left">south</td>
+<td align="left">LCS</td>
 </tr>
 <tr class="odd">
 <td align="left">sy280-2</td>
@@ -1170,6 +1440,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">s.wd</td>
 <td align="left">LC</td>
+<td align="left">south</td>
+<td align="left">LCS</td>
 </tr>
 <tr class="even">
 <td align="left">sy280-3</td>
@@ -1177,6 +1449,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">s.wd</td>
 <td align="left">LC</td>
+<td align="left">south</td>
+<td align="left">LCS</td>
 </tr>
 <tr class="odd">
 <td align="left">sy43-1</td>
@@ -1184,6 +1458,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">s.wd</td>
 <td align="left">LC</td>
+<td align="left">south</td>
+<td align="left">LCS</td>
 </tr>
 <tr class="even">
 <td align="left">sy43-2</td>
@@ -1191,6 +1467,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">s.wd</td>
 <td align="left">LC</td>
+<td align="left">south</td>
+<td align="left">LCS</td>
 </tr>
 <tr class="odd">
 <td align="left">sy43-3</td>
@@ -1198,6 +1476,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">s.wd</td>
 <td align="left">LC</td>
+<td align="left">south</td>
+<td align="left">LCS</td>
 </tr>
 <tr class="even">
 <td align="left">sy43-4</td>
@@ -1205,6 +1485,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">s.wd</td>
 <td align="left">LC</td>
+<td align="left">south</td>
+<td align="left">LCS</td>
 </tr>
 <tr class="odd">
 <td align="left">sy43-5</td>
@@ -1212,6 +1494,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">s.wd</td>
 <td align="left">LC</td>
+<td align="left">south</td>
+<td align="left">LCS</td>
 </tr>
 <tr class="even">
 <td align="left">sy43-6</td>
@@ -1219,6 +1503,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <td align="left">not.mort</td>
 <td align="left">s.wd</td>
 <td align="left">LC</td>
+<td align="left">south</td>
+<td align="left">LCS</td>
 </tr>
 </tbody>
 </table>
@@ -1371,7 +1657,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## [ 140 / 142 ]  sy43-4.jpg
 ## [ 141 / 142 ]  sy43-5.jpg
 ## [ 142 / 142 ]  sy43-6.jpg</code></pre>
-<pre><code>## Done in 17.7 secs</code></pre>
+<pre><code>## Done in 17 secs</code></pre>
 <div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="elliptical-fourier-analysis.html#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># add attributes</span></span>
 <span id="cb7-2"><a href="elliptical-fourier-analysis.html#cb7-2" aria-hidden="true" tabindex="-1"></a>data.out <span class="ot">&lt;-</span> <span class="fu">Out</span>(outlines, </span>
 <span id="cb7-3"><a href="elliptical-fourier-analysis.html#cb7-3" aria-hidden="true" tabindex="-1"></a>         <span class="at">fac =</span> att.data)</span>
