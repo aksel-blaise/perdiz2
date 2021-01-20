@@ -1,0 +1,122 @@
+# Elliptical Fourier Analysis
+
+## Load packages + data
+
+```{r load.packages, out.width = "100%", dpi = 300, echo=TRUE, warning=FALSE}
+# load packages
+#devtools::install_github("MomX/Momocs")
+library(here)
+library(Momocs)
+
+# read images
+jpg.list <- list.files(here("img.perdiz"), full.names = TRUE)
+
+# read attribute data
+att.data <- read.csv("perdiz.csv", header = TRUE, as.is = TRUE)
+
+# attribute to factor
+att.data$region <- as.factor(att.data$region)
+att.data$temp.reg <- as.factor(att.data$temp.reg)
+
+knitr::kable((att.data[, 1:5]), "pipe", caption = "Qualitative data for Perdiz arrow point sample.")
+```
+
+## Generate outlines
+
+```{r outlines + attributes, out.width = "100%", dpi = 300, echo=TRUE, warning=FALSE}
+# generate outlines
+outlines <- jpg.list %>%
+  import_jpg()
+
+# add attributes
+data.out <- Out(outlines, 
+         fac = att.data)
+
+# scale, align, rotate, and center specimens
+norm.outlines <- data.out %>% 
+  coo_scale() %>%
+  coo_align() %>% 
+  coo_center()
+```
+
+## Calibrate harmonic + EFA
+
+```{r cal.harm, out.width = "100%", dpi = 300, echo=TRUE, warning=FALSE}
+# calibrate how many harmonics needed
+calibrate_harmonicpower_efourier(norm.outlines, 
+                                 nb.h = 30)
+
+# 11 harmonics needed to capture 99 percent of variation
+calibrate_reconstructions_efourier(norm.outlines, 
+                                   range = 1:11)
+
+# generate efa outlines with 11 harmonics
+efa.outlines <- efourier(norm.outlines, 
+                         nb.h = 11, 
+                         norm = TRUE)
+
+# use efa.outlines for pca
+pca.outlines <- PCA(efa.outlines)
+```
+
+## PCA
+
+```{r pca.plot, out.width = "100%", dpi = 300, echo=TRUE, warning=FALSE}
+# pca 
+scree_plot(pca.outlines)
+
+# plot pca by region
+plot_PCA(pca.outlines, 
+         morphospace_position = "range_axes",
+         palette = pal_qual_solarized,
+         chullfilled = TRUE,
+         ~region,
+         axesnames = TRUE,
+         morphospace = TRUE,
+         eigen = TRUE,
+         center_origin = TRUE,
+         zoom = 1.25)
+
+# plot pca by temporal + region
+plot_PCA(pca.outlines, 
+         morphospace_position = "range_axes",
+         palette = pal_qual_solarized,
+         chullfilled = TRUE,
+         ~temp.reg,
+         axesnames = TRUE,
+         morphospace = TRUE,
+         eigen = TRUE,
+         center_origin = TRUE,
+         zoom = 1.4)
+
+# mean shape + 2sd for the first 10 pcs
+PCcontrib(pca.outlines, nax = 1:5)
+```
+
+## MANOVA + MANOVA_PW
+
+```{r manova, out.width = "100%", dpi = 300, echo=TRUE, warning=FALSE}
+# manova
+
+# shape difference between temporal periods?
+MANOVA(pca.outlines, 'region')
+
+# shape difference between temp.reg?
+MANOVA(pca.outlines, 'temp.reg')
+# which differ?
+MANOVA_PW(pca.outlines, 'temp.reg')
+```
+
+## Mean shapes
+
+```{r ms1, out.width = "100%", dpi = 300, echo=TRUE, warning=FALSE}
+# mean shapes
+
+# region
+ms.1 <- MSHAPES(efa.outlines, ~region)
+plot_MSHAPES(ms.1, size = 0.75)
+
+# temporal + region
+ms.1 <- MSHAPES(efa.outlines, ~temp.reg)
+plot_MSHAPES(ms.1, size = 0.75)
+```
