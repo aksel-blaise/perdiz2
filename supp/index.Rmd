@@ -1,5 +1,5 @@
 --- 
-title: "Supplementary materials for paper: Morphometric analysis supports a geographic shape difference in Perdiz arrow points recovered from the southern Caddo area"
+title: "Supplementary materials for paper: Patterns of shape change for Perdiz arrow points recovered from the southern Caddo area"
 author: "Robert Z. Selden, Jr., John E. Dockall, and Bonnie L. Etter"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
