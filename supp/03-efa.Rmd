@@ -67,7 +67,7 @@ scree_plot(pca.outlines)
 
 # plot pca by region
 plot_PCA(pca.outlines, 
-         morphospace_position = "range_axes",
+         morphospace_position = "range",
          palette = pal_qual_solarized,
          chullfilled = TRUE,
          ~region,
@@ -75,11 +75,11 @@ plot_PCA(pca.outlines,
          morphospace = TRUE,
          eigen = TRUE,
          center_origin = TRUE,
-         zoom = 1.25)
+         zoom = 1.4)
 
 # plot pca by temporal + region
 plot_PCA(pca.outlines, 
-         morphospace_position = "range_axes",
+         morphospace_position = "range",
          palette = pal_qual_solarized,
          chullfilled = TRUE,
          ~temp.reg,
