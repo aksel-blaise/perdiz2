@@ -1,4 +1,3 @@
 # Perdiz arrow point sample
 
-A description of those sites used in that sample can be found at [https://aksel-blaise.github.io/perdiz/](https://aksel-blaise.github.io/perdiz/).
-
+Site descriptions related to the sample can be found at [https://aksel-blaise.github.io/perdiz/](https://aksel-blaise.github.io/perdiz/).
