@@ -18,7 +18,7 @@ att.data <- read.csv("perdiz.csv", header = TRUE, as.is = TRUE)
 att.data$region <- as.factor(att.data$region)
 att.data$temp.reg <- as.factor(att.data$temp.reg)
 
-knitr::kable((att.data[, 1:7]), "pipe", caption = "Qualitative data for Perdiz arrow point sample.")
+knitr::kable((att.data[, 1:5]), "pipe", caption = "Qualitative data for Perdiz arrow point sample.")
 ```
 
 ## Generate outlines
