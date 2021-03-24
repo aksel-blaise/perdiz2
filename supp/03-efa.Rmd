@@ -4,7 +4,7 @@
 
 ```{r load.packages, out.width = "100%", dpi = 300, echo=TRUE, warning=FALSE}
 # load packages
-#devtools::install_github("MomX/Momocs")
+devtools::install_github("MomX/Momocs")
 library(here)
 library(Momocs)
 
@@ -89,7 +89,7 @@ plot_PCA(pca.outlines,
          center_origin = TRUE,
          zoom = 1.4)
 
-# mean shape + 2sd for the first 10 pcs
+# mean shape + 2sd for the first 5 pcs
 PCcontrib(pca.outlines, nax = 1:5)
 ```
 
