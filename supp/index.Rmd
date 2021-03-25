@@ -24,7 +24,7 @@ knitr::include_graphics('./images/hist.caddo.net.jpg')
 
 ## Primary findings
 
-* Perdiz arrow point shape differs by Caddo community of practice
+* Perdiz arrow point shape differs significantly by Caddo community of practice
 * Perdiz arrow point shapes in the northern Caddo community of practice differ significantly through time
 * Perdiz arrow point shapes in the southern Caddo community of practice do not differ significantly through time
 
