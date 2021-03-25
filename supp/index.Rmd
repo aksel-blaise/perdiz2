@@ -30,7 +30,7 @@ knitr::include_graphics('./images/hist.caddo.net.jpg')
 
 ## Acknowledgments
 
-We express our gratitude to the Caddo Nation of Oklahoma and the Anthropology and Archaeology Laboratory at Stephen F. Austin State University for the requisite permissions and access to the NAGPRA items from the Washington Square Mound site and Turner collection. Thanks to ..., as well as the editors and reviewers for their comments and constructive criticisms that further improved the manuscript.
+We express our gratitude to the Caddo Nation of Oklahoma and the Anthropology and Archaeology Laboratory at Stephen F. Austin State University for the requisite permissions and access to the NAGPRA items from the Washington Square Mound site and Turner collection. Thanks to ..., as well as the editor and reviewers for their comments and constructive criticisms, which further improved the manuscript.
 
 ## Funding
 
