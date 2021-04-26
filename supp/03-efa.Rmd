@@ -35,7 +35,8 @@ data.out <- Out(outlines,
 # scale, align, rotate, and center specimens
 norm.outlines <- data.out %>% 
   coo_scale() %>%
-  coo_align() %>% 
+  coo_align() %>%
+  coo_rotate() %>% 
   coo_center()
 ```
 
